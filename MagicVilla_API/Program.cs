@@ -1,16 +1,15 @@
-<<<<<<< HEAD
+
 using MagicVilla_API.Data;
 using MagicVilla_API.Logging;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
-=======
->>>>>>> 553fb4effa202013888f3e374be4660fc54784cf
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-<<<<<<< HEAD
+
 //Log.Logger = new LoggerConfiguration()
 //    .MinimumLevel.Debug()
 //    .WriteTo.File("logs/villaLogs.txt", rollingInterval: RollingInterval.Day)
@@ -25,12 +24,12 @@ builder.Services.AddControllers().AddNewtonsoftJson();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<ILogging,Logging>();
-=======
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
->>>>>>> 553fb4effa202013888f3e374be4660fc54784cf
+
 
 var app = builder.Build();
 
